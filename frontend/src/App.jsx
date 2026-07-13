@@ -2,7 +2,8 @@ import React, { useState, useCallback, useRef } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const API = 'http://localhost:8000';
+// const API = 'http://localhost:8000';
+const API = "https://ats-builder-v2.onrender.com";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // PDF GENERATOR  (Using html2canvas directly to avoid Blob Worker crashes)
