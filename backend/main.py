@@ -18,9 +18,11 @@ app.add_middleware(
 )
 
 # ── Put your OpenAI key here ───────────────────────────────────────────────
-client = OpenAI(api_key="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")
+# client = OpenAI(api_key="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")
 
-
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY")
+)
 # ── Request model ──────────────────────────────────────────────────────────
 class ResumeRequest(BaseModel):
     old_resume: str
